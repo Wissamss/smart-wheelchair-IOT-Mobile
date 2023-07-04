@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contact_details"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/contact_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/contact_img"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_call" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_name"
+        android:layout_below="@+id/call"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_tel"
+        android:layout_below="@+id/contact_name"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_email"
+        android:layout_below="@+id/contact_tel"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_service"
+        android:layout_below="@+id/contact_email"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#b298dc"
+        app:maxImageSize="35dp"
+        android:src="@drawable/ic_editt"
+        android:layout_marginRight="4dp"
+        android:layout_below="@+id/contact_service"
+        android:layout_marginBottom="10dp">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        app:backgroundTint="#b298dc"
+        android:layout_below="@+id/edit"
+        app:maxImageSize="35dp"
+        >
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>

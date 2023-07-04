@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/back2"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:id="@+id/firstLinearLayout"
+        android:layout_width="match_parent"
+        android:background="@color/purple_500"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouvement Control using voice"
+            android:textSize="26sp"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstLinearLayout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/MessageUser15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Guide"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/thirdLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondLinearLayout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/MessageUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:hint="      To start your wheelchair and go straight say 'go'"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            />
+        <TextView
+            android:id="@+id/MessageUser2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="      To turn right say 'right'"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MessageUser"
+            />
+        <TextView
+            android:id="@+id/MessageUser3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="      To turn left say 'left'"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MessageUser2"
+            />
+        <TextView
+            android:id="@+id/MessageUser4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="      To stop say 'stop'"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/fourthLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thirdLinearLayout"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="speak"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="Speak"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
